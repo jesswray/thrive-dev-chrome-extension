@@ -4,8 +4,8 @@
   "version": "0.1",
   "content_scripts": [
   {
-    "matches": ["https://true.thrivetrm.com/*", "http://true.thrivetrm.com/*"]
-    ,
+    "matches": ["https://true.thrivetrm.com/*", "http://true.thrivetrm.com/*",
+      "http://true.staging.thrivetrm.com/*", "https://true.staging.thrivetrm.com/*"],
     "js": ["jquery-2.1.4.min.js", "content.js"]
   }
 ]

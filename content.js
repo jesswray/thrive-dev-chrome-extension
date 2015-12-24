@@ -1,7 +1,19 @@
-alert("You're on production!");
-
 function turnRed(){
   $('.nav-main-container').css('background-color', 'red');
   };
 
-turnRed();
+function turnPurple(){
+  $('.nav-main-container').css('background-color', 'purple');
+  };
+
+var url = window.location.href
+function colorChoice(){
+  if ( url.search("staging") != -1 ){
+    turnPurple();
+  }
+  else {
+    turnRed();
+  };
+};
+
+colorChoice();
