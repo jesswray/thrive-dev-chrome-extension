@@ -17,3 +17,7 @@ function colorChoice(){
 };
 
 colorChoice();
+
+document.addEventListener("turbolinks:load", function(){
+  setTimeout( colorChoice(), 500);
+})
