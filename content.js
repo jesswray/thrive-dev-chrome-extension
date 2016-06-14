@@ -1,18 +1,36 @@
-function turnRed(){
-  $('.nav-main-container').css('background-color', 'red');
+function turnColor(color){
+  $('.nav-main-container').css('background-color', color);
   };
 
-function turnPurple(){
-  $('.nav-main-container').css('background-color', 'purple');
-  };
+function production(){
+  turnColor('#FF0000');
+};
+
+function staging(){
+  turnColor('#D290D4');
+};
+
+function beta(){
+  turnColor('#6BB7FA');
+};
+
+function demo(){
+  turnColor('#FAAE6B');
+};
 
 var url = window.location.href
 function colorChoice(){
   if ( url.search("staging") != -1 ){
-    turnPurple();
+    staging();
+  }
+  else if ( url.search("beta") != -1 ){
+    beta();
+  }
+  else if ( url.search("demo") != -1 ){
+    demo();
   }
   else {
-    turnRed();
+    production();
   };
 };
 
