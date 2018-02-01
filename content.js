@@ -3,11 +3,11 @@ function turnColor(color){
 };
 
 function production(){
-  turnColor('#FF0000');
+  turnColor('#41f4f1');
 };
 
 function staging(){
-  turnColor('#b5f441');
+  turnColor('#df42f4');
 };
 
 var url = window.location.href
